@@ -116,7 +116,15 @@
     
 }
 .btn__conteudo:hover{
-    
+    background-color: #FFF;
+    border-radius: 10px;
+    color:#83cd29 ;
+    border: 2px solid #83cd29;
+    font-size: 1.2rem;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding: .7rem 1.5rem;
+    margin: 1.5em;
 }
 /*CONTEUDO 2*/
 .conteudo2{
