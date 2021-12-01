@@ -1,0 +1,9 @@
+@media (max-width: 575.98px) { 
+    .sobre__titulo{
+        font-size: 1.5rem;
+        margin-left: 1%;
+    }
+    *{
+        border: 1px solid red;
+    }
+}

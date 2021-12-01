@@ -10,10 +10,14 @@ irei implantar o Back-End utilizando nodeJS para fins didaticos.
 
 ### Como instalar na sua maquina
 1 - Clone o projeto
+2 - tenha instlado o node e npm em sua maquina
+3 - execulte o comando npm install para instalar as dependecias
+4 - npm start 
+5 - abra em seu navegador na porta 3000: http://localhost:3000/
 
 #### Status
  <h4 align="center"> 
-	🚧  ... Galo Notícias 🚀 Em construção...  🚧
+	🚧  ... Projeto 🚀 Em construção...  🚧
 </h4>
 
 
