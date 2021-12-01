@@ -9,11 +9,11 @@ Front end simples e atual para um pagina explicativa sobre o NodeJS
 irei implantar o Back-End utilizando nodeJS para fins didaticos.
 
 ### Como instalar na sua maquina
-1 - Clone o projeto
-2 - tenha instlado o node e npm em sua maquina
-3 - execulte o comando npm install para instalar as dependecias
-4 - npm start 
-5 - abra em seu navegador na porta 3000: http://localhost:3000/
+1 - Clone o projeto <br>
+2 - tenha instlado o node e npm em sua maquina <br>
+3 - execulte o comando npm install para instalar as dependecias <br>
+4 - npm start <br>
+5 - abra em seu navegador na porta 3000: http://localhost:3000/ <br>
 
 #### Status
  <h4 align="center"> 
