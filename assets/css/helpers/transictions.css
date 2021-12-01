@@ -1,0 +1,31 @@
+
+
+.transiction-text{
+    
+    box-shadow: .1em 0 0 black;
+    margin: 2rem 1rem;
+    width: 19ch;
+    overflow:hidden;
+   
+    color: #83cd29;
+    white-space:nowrap;
+    animation: caret .5s step-end infinite alternate,
+             type 5s steps(19, end) ;
+}
+
+@keyframes type {
+    0% {
+      width: 0;
+    }
+  
+  }
+  @keyframes caret { 
+    50% { 
+      box-shadow: .1em 0 0 transparent;
+    }
+  }
+  
+
+  .none{
+    box-shadow: 0 0 0 transparent;
+  }
