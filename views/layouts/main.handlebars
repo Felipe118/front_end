@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/css/fadeAnimation.css">
     <link rel="stylesheet" href="/css/helpers/transictions.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/responsivos/header.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
   
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -20,12 +22,26 @@
     <header>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="img__header" alt="">
         <nav class="navbar">
+            
             <ul class="list">
                 <li class="list__item"><a href="" class="list__link">Sobre</a></li>
                 <li class="list__item"><a href="" class="list__link">Projetos</a></li>
                 <li class="list__item"><a href="" class="list__link">Documetação</a></li>
                 <li class="list__item"><a href="" class="list__link">Cursos</a></li>
             </ul>
+            <!--MENU DROPDOWN PARA MOBILE-->
+
+            <div class="dropdown" onclick="recolher">
+                <button class="dropbtn">
+                    <i class="bi bi-list" style="color: red; font-size:2rem; "></i>
+                </button>
+
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                 </div>
+            </div>
         </nav>
     </header>
     {{{body}}}
