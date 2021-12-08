@@ -1,0 +1,33 @@
+@media (max-width: 575.98px) {
+    .rodape{
+        height: 400px;
+        background-color: rgb(58, 57, 57);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .img__footer{
+        display: none;
+    }
+    .rodape__copy{
+        color: white;
+        padding: .5em 1rem;
+        font-weight: bold;
+        font-size: .9rem;
+        width: 90%;
+        margin-top:100;
+        
+    }
+    .rodape__social{
+        display: inline;
+        padding: 1em 1em;
+
+    }
+    .roda__media{
+        width: 40px;
+        height: 40px;
+    
+    }
+}
+

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,32 +15,43 @@
     <link rel="stylesheet" href="/css/helpers/transictions.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/responsivos/header.css">
+    <link rel="stylesheet" href="/css/responsivos/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-  
+    <script src="/js/dropdown.js"></script>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="img__header" alt="">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="img__header"
+            alt="">
         <nav class="navbar">
-            
+
+
+
             <ul class="list">
                 <li class="list__item"><a href="" class="list__link">Sobre</a></li>
                 <li class="list__item"><a href="" class="list__link">Projetos</a></li>
                 <li class="list__item"><a href="" class="list__link">Documetação</a></li>
                 <li class="list__item"><a href="" class="list__link">Cursos</a></li>
             </ul>
+
+            
+
             <!--MENU DROPDOWN PARA MOBILE-->
 
+            
             <div class="dropdown" onclick="recolher">
-                <button class="dropbtn">
-                    <i class="bi bi-list" style="color: red; font-size:2rem; "></i>
+                <button class="dropbtn" onclick="recolher()" >
+                    <i class="bi bi-list" style="color: white; font-size:2rem; "></i>
                 </button>
 
-                <div class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+                <div class="dropdown-content"  id="content" >
+                    <a href="#">Sobre</a>
+                    <a href="#">Projetos</a>
+                    <a href="#">Documetação</a>
+                    <a href="#">Cursos</a>
                  </div>
             </div>
         </nav>
@@ -47,17 +59,30 @@
     {{{body}}}
 
     <footer class="rodape">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="img__rodape" alt="">
-        <span class="rodape__copy">&copy; All Rights Reservations</span>
         <div class="rodape__social">
             <h2 class="rodape__social-title">Social Media</h2>
-            <a href="#" class="rodape__link"><img class="roda__media" src="/img/img-sociais/facebook.svg" alt="Facebook"></a>
-            <a href="#" class="rodape__link"><img class="roda__media" src="/img/img-sociais/instagram.svg" alt="Instagram"></a>
-            <a href="" class="rodape__link"><img class="roda__media" src="/img/img-sociais/youtube.svg" alt="Youtube"></a>
-            <a href="" class="rodape__link"><img class="roda__media" src="/img/img-sociais/twitter.svg" alt="Twitter"></a>
+            <a href="#" class="rodape__link"><img class="roda__media" src="/img/img-sociais/facebook.svg"
+                    alt="Facebook"></a>
+            <a href="#" class="rodape__link"><img class="roda__media" src="/img/img-sociais/instagram.svg"
+                    alt="Instagram"></a>
+            <a href="" class="rodape__link"><img class="roda__media" src="/img/img-sociais/youtube.svg"
+                    alt="Youtube"></a>
+            <a href="" class="rodape__link"><img class="roda__media" src="/img/img-sociais/twitter.svg"
+                    alt="Twitter"></a>
         </div>
         
+            <div class="copy">
+                &copy;All Rights Reservation
+            </div>
     </footer>
+        
+
+        
+    
+          
+               
+
+
 </body>
 
 

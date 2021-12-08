@@ -3,7 +3,109 @@
         font-size: 1.5rem;
         margin-left: 1%;
     }
-    *{
-        border: 1px solid red;
+*{
+    border:1px solid red;
+}
+    .banner__titulo{
+        color: #83cd29;
+        font-size: 3rem;
+        position: absolute;
+        text-shadow: 0 4px 4px rgb(0 0 0 / 75%);
+      
+        left: 10%;
+        top: 30%;
     }
+
+    .sobre{
+        padding: 1.5em;
+        text-align: left;
+    }
+    .sobre__titulo{
+        color: #83cd29;
+        font-size: 2rem;
+        margin-left: 30%;
+    }
+   
+
+    .codigo__titulo{
+        color: #83cd29;
+        font-size: 2rem;
+        text-align: left;
+        padding: 1.3rem;
+    }
+    .codigo__imagem-texto{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+       }
+    .codigo__imagem{
+        background-image: url('/img/codigo.jpg');
+        width: 300px;
+        height: 300px;
+        margin-left: .1rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .codigo_descricao{
+        box-sizing: border-box;
+        color: white;
+        display: inline;
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5;
+        padding: 1rem .5rem;
+        text-align: left;
+        width: 80%;
+    }
+    
+    /* CONTEUDO IMAGEM */
+    .conteudo{
+        display: flex;
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 100%;
+    }
+    .title__conteudo{
+        font-family: "Poppins", sans-serif;
+        font-size: 3rem;
+        padding: 2rem 1rem;
+        text-align: center;
+       
+    }
+    .conteudo__imagem{
+        width: 100%;
+        background: url('/img/programador.png');
+        background-size: cover;
+       
+        height: 295px;
+        
+    }
+    .conteudo2__imagem{
+        width: 100%;
+        background: url('/img/node.png') no-repeat center / cover;
+        height: 295px;
+       margin-top: 30px;
+       border-radius: 10px;
+       display: flex;
+       order: -1;
+    }
+    .conteudo__titulo{
+        font-family: "Poppins", sans-serif;
+        padding: 1rem 0;
+        font-size: 1.8rem;
+        
+    }
+    .conteudo_texto--div{
+        
+        width: 100%;
+      
+    }
+    .conteudo__texto{
+        display: flex;
+        padding: 1.5rem 0;
+        order: 90;
+       
+    }
+    
 }

@@ -3,42 +3,21 @@
     box-sizing: border-box;
     background-color: rgb(58, 57, 57);
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    position: relative;
     
-
+    
 }
-.rodape__copy{
+.copy{
+    font-size: 1rem;
     color: white;
-    padding: .5em 1rem;
-    font-weight: bold;
-    margin-top: 170px;
-    font-size: .9rem;
-
-
-}
-.rodape__social{
-    display: inline-block;
-    padding: 1em 1em;
-   
-    
-   
+    text-align: center;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 0;
+    margin: 15px;
+    left: 39%;
 }
 .roda__media{
     width: 40px;
     height: 40px;
-
-}
-.rodape__link{
-    margin-left: 20px;
-}
-.rodape__social-title{
-    color: white;
-    padding: 1em 1em;
-}
-.img__rodape{
-    width: 70px;
-    height: 70px;
-    margin-top: 70px;
-    margin-left: 40px;
 }
