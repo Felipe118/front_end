@@ -20,6 +20,13 @@ irei implantar o Back-End utilizando nodeJS para fins didaticos.
 	🚧  ... Projeto 🚀 Em construção...  🚧
 </h4>
 
+### PLANOS FUTUROS
+
+* Fazer a autenticação de usuários.
+* Criar novas Features de Back-End com NodeJS.
+* Incluir novas funcionalidades.
+* Criar um guia completo auto explicativo sobre varias linguagens de programação do mercado.
+
 
 ### TELA
 <img src="assets/img/apresentacao.png">
