@@ -9,7 +9,7 @@ Front end simples e atual para um pagina explicativa sobre o NodeJS
 irei implantar o Back-End utilizando nodeJS para fins didaticos.
 
 ### Como instalar na sua maquina
-1 - Clone o projeto <br>
+1 - Clone o projeto https://github.com/Felipe118/front_end.git <br>
 2 - tenha instlado o node e npm em sua maquina <br>
 3 - execulte o comando npm install para instalar as dependecias <br>
 4 - npm start <br>
@@ -20,7 +20,7 @@ irei implantar o Back-End utilizando nodeJS para fins didaticos.
 	🚧  ... Projeto 🚀 Em construção...  🚧
 </h4>
 
-### PLANOS FUTUROS
+## PLANOS FUTUROS
 
 * Fazer a autenticação de usuários.
 * Criar novas Features de Back-End com NodeJS.
