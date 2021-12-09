@@ -11,13 +11,20 @@
     font-size: 1rem;
     color: white;
     text-align: center;
-    border: 1px solid red;
     position: absolute;
     bottom: 0;
     margin: 15px;
-    left: 39%;
+    left: 43%;
 }
 .roda__media{
     width: 40px;
     height: 40px;
+    padding: 1.3rem 0.8rem;
+}
+.rodape__social-title{
+    color: white;
+    padding-top: 2rem;
+}
+.rodape__social{
+    text-align: center;
 }

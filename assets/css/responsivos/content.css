@@ -3,9 +3,7 @@
         font-size: 1.5rem;
         margin-left: 1%;
     }
-*{
-    border:1px solid red;
-}
+
     .banner__titulo{
         color: #83cd29;
         font-size: 3rem;
@@ -53,9 +51,8 @@
         font-size: 1.2rem;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.5;
-        padding: 1rem .5rem;
-        text-align: left;
-        width: 80%;
+        text-align: justify;
+        width: 100%;
     }
     
     /* CONTEUDO IMAGEM */
