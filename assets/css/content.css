@@ -19,8 +19,8 @@
     top: 30%;
 }
 .sobre{
-        padding: 2.5em;
-        text-align: center;
+    padding: 2.5em;
+    text-align: center;
     }
 .sobre__titulo{
     color: #83cd29;
@@ -45,7 +45,7 @@
 }
 .codigo__imagem-texto{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2rem;
    }
 .codigo__imagem{
@@ -53,6 +53,7 @@
     width: 400px;
     height: 300px;
     margin-left: 3rem;
+    margin-bottom: 50px;
     background-repeat: no-repeat;
 }
 .codigo_descricao{
@@ -165,6 +166,5 @@
     padding: .7rem 1.5rem;
     margin: 1.5em;
     background-color: #83cd29;
-    
 }
 
