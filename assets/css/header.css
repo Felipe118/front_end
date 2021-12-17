@@ -3,6 +3,8 @@ header{
     display: flex;
     justify-content: space-between;
     background-color: rgb(51, 49, 49);
+    position: relative;
+    
   
 
 }
@@ -15,6 +17,9 @@ header{
 .list{
     display: flex;
     flex-direction: row;
+    margin-right: 120px;
+    
+    
 }
 .list__item{
     list-style: none;
@@ -32,4 +37,33 @@ header{
 
 .dropdown{
     display: none;
+}
+.btn-login{
+    border: none;
+    background-color: #83cd29;
+    padding: .8rem 1.2rem;
+    position:absolute;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.btn-login:hover{
+    border: 2px solid white;
+    background-color:rgb(51, 49, 49) ;
+    transition: 1s ease-in;
+    padding: .8rem 1.2rem;
+    position:absolute;
+    right: 20px;
+    bottom: 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
 }
