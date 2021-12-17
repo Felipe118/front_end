@@ -10,9 +10,9 @@ irei implantar o Back-End utilizando nodeJS para fins didaticos.
 
 ### Como instalar na sua maquina
 1 - Clone o projeto https://github.com/Felipe118/front_end.git <br>
-2 - tenha instlado o node e npm em sua maquina <br>
+2 - tenha instalado o node e npm em sua maquina <br>
 3 - execulte o comando npm install para instalar as dependecias <br>
-4 - npm start <br>
+4 - depois execulte npm start <br>
 5 - abra em seu navegador na porta 3000: http://localhost:3000/ <br>
 
 #### Status
