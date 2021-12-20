@@ -1,0 +1,71 @@
+.container{
+    background-image: linear-gradient(to right top, #36393d, #115e71, #008887, #00af6e, #83cd29);
+    height: 100vh;
+}
+form{
+   
+    margin-top: 60px;
+  
+}
+.form__title{
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.form{
+    width: 400px;
+    height: 500px;
+    background-color: rgb(49, 48, 48);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    margin: 0 auto;
+    position: relative;
+    top: 210px;
+    
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+    padding: 1rem 1.3rem;
+    
+}
+.form-control label{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0.6em;
+}
+.form-control input{
+    padding: 7px;
+  border-radius: 3px;
+  border: 1px solid wheat;
+}
+.btn-login{
+
+    background-color: rgb(49, 48, 48);
+    border: 2px solid #008887;
+    color: #008887;
+    font-size: 1rem;
+    padding: 0.8rem 7rem;
+    margin: 1rem 3rem;
+    cursor: pointer;
+}
+.btn-login:hover{
+    background-color: rgb(49, 48, 48);
+    border: 2px solid #83cd29;
+    color: #83cd29;
+    font-size: 1rem;
+    padding: 0.8rem 7rem;
+    margin: 1rem 3rem;
+    cursor: pointer;
+}
+.form__text{
+    color: white;
+    padding: 1rem 1.3rem;
+}
+.form__text a {
+    text-decoration: none;
+    color:#00af6e ;
+}

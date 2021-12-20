@@ -23,6 +23,9 @@ app.get('/', function(req,res){
     res.render('home')
 })
 
+app.get('/auth', function(req,res){
+    res.render('layouts/auth',{ layout: 'auth'})
+})
 app.listen(3000)
 
 
