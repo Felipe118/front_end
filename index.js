@@ -24,7 +24,40 @@ app.use(
 
 app.use(express.json())
 
+//session middleware
+app.use(
+    session({
+      name: 'session',
+      secret: 'my_secret',
+      resave: false,
+      saveUninitialized: false,
+      store: new FileStore({
+        logFn: function () {},
+        path: require('path').join(require('os').tmpdir(), 'sessions'),
+      }),
+      cookie: {
+        secure: false,
+        maxAge: 3600000,
+        expires: new Date(Date.now() + 3600000),
+        httpOnly: true,
+      },
+    }),
+  )
+
+app.use(flash());
+
 app.use(express.static('assets'))
+// set session to res
+app.use((req, res, next) => {
+    // console.log(req.session)
+    console.log(req.session.userid);
+  
+    if (req.session.userid) {
+      res.locals.session = req.session;
+    }
+  
+    next();
+  });
 
 //Rotas
 
@@ -33,6 +66,10 @@ app.get('/', function(req,res){
 });
 app.use('/', authRoutes)
 
-app.listen(3000)
-
+conn
+  .sync()
+  .then(() => {
+    app.listen(3000);
+  })
+  .catch((err) => console.log(err));
 

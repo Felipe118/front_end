@@ -2,11 +2,15 @@
 
 <section class="form-register">
 
-    
+    {{#if messages.message}}
+        <div class="form__register-message">
+            <p>{{messages.message}}</p>
+        </div>
+    {{/if}}
     <div class="form__register-container">
     <h1 class="form-title">Registre-se</h1>
 
-    <form action="/registerPost" method="post">
+    <form action="/register" method="post">
         <div class="form-control">
             <label for="">Nome:</label>
             <input type="text" name="name" placeholder="Nome" requireds>
@@ -17,7 +21,7 @@
         </div>
         <div class="form-control">
             <label for="">Senha:</label>
-            <input type="password" name="password" placeholder="Senha" requireds>
+            <input type="password" name="pass" placeholder="Senha" requireds>
         </div>
         <div class="form-control">
             <label for="">Confirme a Senha:</label>
