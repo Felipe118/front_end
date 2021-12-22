@@ -1,0 +1,35 @@
+<main class="conteiner-regisiter">
+
+<section class="form-register">
+
+    
+    <div class="form__register-container">
+    <h1 class="form-title">Registre-se</h1>
+
+    <form action="/registerPost" method="post">
+        <div class="form-control">
+            <label for="">Nome:</label>
+            <input type="text" name="name" placeholder="Nome" requireds>
+        </div>
+        <div class="form-control">
+            <label for="">E-mail</label>
+            <input type="text" name="email" placeholder="E-mail" requireds>
+        </div>
+        <div class="form-control">
+            <label for="">Senha:</label>
+            <input type="password" name="password" placeholder="Senha" requireds>
+        </div>
+        <div class="form-control">
+            <label for="">Confirme a Senha:</label>
+            <input type="password" name="confirmpassword" placeholder="Confirme a senha" requireds>
+        </div>
+
+        <input class="btn-register" type="submit" value="CADASTRAR">
+        <div class="form__register-texts"> <p>Já tem conta? <a class="form__register-link" href="/auth">Clique aqui</a></p></div>
+       
+    </form>
+    </div>
+
+</section>
+
+</main>
