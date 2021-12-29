@@ -1,12 +1,47 @@
 const User = require("../models/User.js")
 
 const bcrypt = require("bcryptjs")
+const res = require("express/lib/response")
+const req = require("express/lib/request")
 
 
 module.exports = class AuthController{
 
     static auth(req,res){
         res.render('layouts/auth',{ layout: 'auth'})
+    }
+    static async authPost(req,res){
+       
+        const {email,password} = req.body
+
+        const user = await User.findOne({where: {email:email}}) 
+
+        console.log(user)
+
+        if (!user) {
+            res.render('auth', {
+              message: 'Usuário nao encontrado!',
+            })
+      
+            return
+          }
+
+          //compare password
+          const passwordMatch = bcrypt.compareSync(password, user.pass)
+
+          if(!passwordMatch){
+            res.render('auth',{
+                message: "Senha Invalida"
+            })
+            return
+          }
+
+          req.session.userid = user.id
+
+          req.flash('message','Login realizado com sucesso')
+          req.session.save(()=>{
+              res.redirect('/');
+          })
     }
     static register(req,res){
         res.render('register')
@@ -47,7 +82,7 @@ module.exports = class AuthController{
                 req.flash('message', 'Cadastro realizado com sucessso')
 
                 req.session.save(()=>{
-                    res.redirect('/')
+                    res.redirect('/auth')
                 })
              }).catch((erro) => console.log(erro))
     }
