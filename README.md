@@ -20,11 +20,11 @@ irei implantar o Back-End utilizando nodeJS.
 	🚧  ... Projeto 🚀 Em construção...  🚧
 </h4>
 
-## FEATURES FUTUROS
+## FEATURES FUTURAS
 
 - [x] Fazer a autenticação de usuários;
 - [ ] Incluir o cadastro de noticias sobre diversas linguagens de programção;
-- [ ] Incluir novas funcionalidades;
+- [ ] Incluir controle de usuários;
 - [ ] Criar um guia completo auto explicativo sobre varias linguagens de programação do mercado.
 
 
