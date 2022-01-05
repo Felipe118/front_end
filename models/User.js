@@ -3,7 +3,8 @@ const {DataTypes} = require("sequelize")
 
  const db = require("../db/db.js")
 
- const User = db.define('usuario', {
+
+ const User = db.define('users', {
      name:{
          type:DataTypes.STRING,
          allowNull: false
@@ -14,6 +15,10 @@ const {DataTypes} = require("sequelize")
      },
      pass: {
          type: DataTypes.STRING,
+         allowNull:false
+     },
+     permission:{
+        type: DataTypes.STRING,
          allowNull:false
      }
  })

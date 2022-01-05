@@ -8,6 +8,9 @@ const app = express()
 
 const conn = require('./db/db.js')
 
+//models
+const News = require("./models/News.js")
+
 //routes
 
 const authRoutes = require('./routes/authRoutes')
