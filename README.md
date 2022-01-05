@@ -1,12 +1,11 @@
-# FRONT END
-* Projeto inicial de ilustração de um front-end utilizando animações 
+# Sobre
 
-## Sobre
-Front end simples e atual para um pagina explicativa sobre o NodeJS
+- Criando uma aplicação Full-Stack para fins didáticos com NodeJS, inicialmente a idea é que usuário dos sistemas
+terão acesso para cadastrar noticias e materías sobre diversas linguagens de programação para fins didáticos. 
 
 ### Desenvolvimento 
 * Atualmente o projeto está sendo construído todas as paginas utilizando template engine, por que futuramente 
-irei implantar o Back-End utilizando nodeJS para fins didaticos.
+irei implantar o Back-End utilizando nodeJS.
 
 ### Como instalar na sua maquina
 1 - Clone o projeto https://github.com/Felipe118/front_end.git <br>
