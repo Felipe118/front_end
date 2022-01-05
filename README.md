@@ -10,22 +10,23 @@ irei implantar o Back-End utilizando nodeJS para fins didaticos.
 
 ### Como instalar na sua maquina
 1 - Clone o projeto https://github.com/Felipe118/front_end.git <br>
-2 - tenha instalado o node e npm em sua maquina <br>
-3 - execulte o comando npm install para instalar as dependecias <br>
-4 - depois execulte npm start <br>
-5 - abra em seu navegador na porta 3000: http://localhost:3000/ <br>
+2 - crie um banco mysql no seu ambiente como nome node_news <br>
+3 - tenha instalado o node e o npm em sua maquina <br>
+4 - execulte o comando npm install para instalar as dependecias <br>
+5 - depois execulte npm start <br>
+6 - abra em seu navegador na porta 3000: http://localhost:3000/ <br>
 
 #### Status
  <h4 align="center"> 
 	🚧  ... Projeto 🚀 Em construção...  🚧
 </h4>
 
-## PLANOS FUTUROS
+## FEATURES FUTUROS
 
-* Fazer a autenticação de usuários.
-* Criar novas Features de Back-End com NodeJS.
-* Incluir novas funcionalidades.
-* Criar um guia completo auto explicativo sobre varias linguagens de programação do mercado.
+- [x] Fazer a autenticação de usuários;
+- [ ] Incluir o cadastro de noticias sobre diversas linguagens de programção;
+- [ ] Incluir novas funcionalidades;
+- [ ] Criar um guia completo auto explicativo sobre varias linguagens de programação do mercado.
 
 
 ### TELA
