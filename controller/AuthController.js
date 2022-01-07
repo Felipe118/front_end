@@ -40,7 +40,7 @@ module.exports = class AuthController{
 
           req.flash('message','Login realizado com sucesso')
           req.session.save(()=>{
-              res.redirect('/');
+              res.redirect('/news');
           })
     }
     static register(req,res){

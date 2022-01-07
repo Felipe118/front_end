@@ -19,7 +19,7 @@ const {DataTypes} = require("sequelize")
      },
      permission:{
         type: DataTypes.STRING,
-         allowNull:false
+         allowNull:true
      }
  })
 

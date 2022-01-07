@@ -12,9 +12,10 @@ const conn = require('./db/db.js')
 const News = require("./models/News.js")
 
 //routes
-
 const authRoutes = require('./routes/authRoutes')
 const homeRoute = require("./routes/homeRoute.js")
+const newsRoutes = require("./routes/newsRoute.js")
+
 app.engine('handlebars',exphbs.engine())
 
 app.set('view engine', 'handlebars')
@@ -68,6 +69,7 @@ app.get('/', function(req,res){
     res.render('home')
 });
 app.use('/', authRoutes)
+app.use('/', newsRoutes)
 
 conn
   .sync()
