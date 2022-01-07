@@ -5,7 +5,7 @@
             <ul class="list">
                 <li class="list__item"><a href="" class="list__link">Sobre</a></li>
                 <li class="list__item"><a href="" class="list__link">Projetos</a></li>
-                {{#if user}}
+                {{#if users.pemission === 'admin'}}
                     <li class="list__item"><a href="" class="list__link">Usuarios</a></li>
                 {{/if}}
                 <li class="list__item"><a href="" class="list__link">Cursos</a></li>

@@ -15,6 +15,7 @@ const News = require("./models/News.js")
 const authRoutes = require('./routes/authRoutes')
 const homeRoute = require("./routes/homeRoute.js")
 const newsRoutes = require("./routes/newsRoute.js")
+const userRoutes = require("./routes/userRoutes.js")
 
 app.engine('handlebars',exphbs.engine())
 
@@ -54,7 +55,7 @@ app.use(express.static('assets'))
 // set session to res
 app.use((req, res, next) => {
     // console.log(req.session)
-    console.log(req.session.userid);
+    //console.log(req.session.userid);
   
     if (req.session.userid) {
       res.locals.session = req.session;
@@ -69,7 +70,8 @@ app.get('/', function(req,res){
     res.render('home')
 });
 app.use('/', authRoutes)
-app.use('/', newsRoutes)
+app.use('/noticias', newsRoutes)
+app.use('/users', userRoutes)
 
 conn
   .sync()

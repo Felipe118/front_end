@@ -16,7 +16,7 @@ module.exports = class AuthController{
 
         const user = await User.findOne({where: {email:email}}) 
 
-        console.log(user)
+        //console.log(user)
 
         if (!user) {
             res.render('auth', {
@@ -37,10 +37,11 @@ module.exports = class AuthController{
           }
 
           req.session.userid = user.id
+         console.log(req.session)
 
           req.flash('message','Login realizado com sucesso')
           req.session.save(()=>{
-              res.redirect('/news');
+              res.redirect('/noticias/news');
           })
     }
     static register(req,res){
@@ -86,5 +87,10 @@ module.exports = class AuthController{
                 })
              }).catch((erro) => console.log(erro))
     }
+
+    static logout(req, res) {
+        req.session.destroy()
+        res.redirect('/')
+      }
 
 }
