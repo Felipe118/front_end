@@ -28,10 +28,10 @@
 
 <div class="form-materias">
     <h1 class="title__news"></h1>
-<form action="">
+<form action="/noticias/newsMateriasPost" method="post">
     <div class="form-control">
         <label class="label__news" for="" >Titulo:</label>
-        <input type="text" title="" class="form-input">
+        <input type="text" name="title" class="form-input">
     </div>
 
     <div class="form-control">
@@ -50,6 +50,7 @@
         <textarea class="form-control" name="news" id="news" rows="25"></textarea>
     </div>
 
-    <input type="button" class="btn-news" value="Cadastrar">
+    <input type="submit" class="btn-news" value="Cadastrar">
 </form>
+
 </div>

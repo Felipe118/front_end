@@ -1,4 +1,5 @@
 const User = require("../models/User.js")
+const News = require("../models/News.js")
 
 module.exports = class NewsController{
     static news(req,res){
@@ -21,9 +22,23 @@ module.exports = class NewsController{
         res.render("news/cad",{ layout: 'main_auth'} )
     }
     static newsMateriasPost(req,res){
-        const title = req.body.title
-        const news = req.body.news
-        const language = req.body.language
+
+        const materia = {
+            title: req.body.title,
+            news: req.body.news,
+            language: req.body.language,
+            userId: req.session.userid
+        }
+        News.create(materia)
+        .then(() => {
+            req.flash('message', 'Pensamento criado com sucesso!')
+            req.session.save(() => {
+                res.redirect('/noticias/news')
+            })
+        }).catch((err) => {
+            console.log(err)
+        })
+       
 
     }
 }
