@@ -4,7 +4,7 @@ const News = require("../models/News.js")
 module.exports = class NewsController{
     static news(req,res){
         const id = req.session.userid
-        console.log(id)
+        //console.log(id)
 
         User.findOne({where:{id:id}, raw:true})
         .then((user) => {

@@ -12,9 +12,27 @@
 
 <body>
     <div class="container">
+        
+    
 
         <div class="form">
+           
+            
+            
             <h1 class="form__title">Login</h1>
+            <div class="container-message">
+            {{#if messages.message}}
+                <div class="message">
+                    {{messages.message}}
+                </div>
+            {{/if}}
+            {{#if message}}
+                <div class="message">
+                {{message}}
+                </div>
+            {{/if}}
+     
+            </div>
 
             <form action="/auth" method="post">
 

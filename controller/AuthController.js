@@ -19,8 +19,9 @@ module.exports = class AuthController{
         //console.log(user)
 
         if (!user) {
-            res.render('auth', {
+            res.render('layouts/auth', {
               message: 'Usuário nao encontrado!',
+              layout: 'auth'
             })
       
             return
@@ -30,19 +31,27 @@ module.exports = class AuthController{
           const passwordMatch = bcrypt.compareSync(password, user.pass)
 
           if(!passwordMatch){
-            res.render('auth',{
-                message: "Senha Invalida"
+            res.render('layouts/auth',{
+                message: "Senha Invalida",
+                layout: 'auth'
             })
             return
           }
 
           req.session.userid = user.id
        //  console.log(req.session)
+          try {
+        
+        req.flash('message','Login realizado com sucesso')
+        req.session.save(()=>{
+            res.redirect('/noticias/news');
+        })
+              
+          } catch (error) {
+            req.flash('message','Login e senha incorretos')
+            res.redirect('/noticias/news');
+        }
 
-          req.flash('message','Login realizado com sucesso')
-          req.session.save(()=>{
-              res.redirect('/noticias/news');
-          })
     }
     static register(req,res){
         res.render('register')
