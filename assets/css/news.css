@@ -1,0 +1,25 @@
+.form-materias{
+    border: 1px solid red;
+    padding: 1rem;
+    width: 60%;
+    margin: 50px auto;
+}
+.label__news{
+    font-size: 1.1rem;
+    padding: 1rem 0;
+    font-weight: bold;
+}
+.form-select{
+    width: 200px;
+}
+.btn-news{
+    border:none ;
+    padding:.8rem 2rem;
+    background-color: chartreuse;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin: 1.3rem 0;
+
+}

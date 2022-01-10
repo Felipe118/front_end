@@ -16,5 +16,14 @@ module.exports = class NewsController{
         })
         
     }
-    
+
+    static newsMaterias(req,res){
+        res.render("news/cad",{ layout: 'main_auth'} )
+    }
+    static newsMateriasPost(req,res){
+        const title = req.body.title
+        const news = req.body.news
+        const language = req.body.language
+
+    }
 }

@@ -1,0 +1,55 @@
+<header>
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="img__header"
+            alt="">
+        <nav class="navbar">
+            <ul class="list">
+                <li class="list__item"><a href="" class="list__link">Sobre</a></li>
+                <li class="list__item"><a href="" class="list__link">Projetos</a></li>
+                <li class="list__item"><a href="" class="list__link">Usuarios</a></li>
+                <li class="list__item"><a href="" class="list__link">Cursos</a></li>
+               
+            </ul>
+             <a href="/logout" class="btn-login">SAIR</a>
+            <!--MENU DROPDOWN PARA MOBILE-->
+            <div class="dropdown" onclick="recolher">
+                <button class="dropbtn" onclick="recolher()" >
+                    <i class="bi bi-list" style="color: white; font-size:2rem; "></i>
+                </button>
+
+                <div class="dropdown-content"  id="content" >
+                    <a href="#">Sobre</a>
+                    <a href="#">Projetos</a>
+                    <a href="#">Materias</a>
+                    <a href="#">Cursos</a>
+                 </div>
+            </div>
+        </nav>
+    </header>
+
+<div class="form-materias">
+    <h1 class="title__news"></h1>
+<form action="">
+    <div class="form-control">
+        <label class="label__news" for="" >Titulo:</label>
+        <input type="text" title="" class="form-input">
+    </div>
+
+    <div class="form-control">
+        <label for="" class="label__news">Linguagem:</label>
+       <select name="language" id="" class="form-select">
+           <option value="PHP">PHP</option>
+           <option value="C#">C#</option>
+           <option value="java">Java</option>
+           <option value="js">JavaScript</option>
+           <option value="python">Python</option>
+       </select>
+    </div>
+
+     <div class="form-control">
+        <label for="" class="label__news">Matéria:</label>
+        <textarea class="form-control" name="news" id="news" rows="25"></textarea>
+    </div>
+
+    <input type="button" class="btn-news" value="Cadastrar">
+</form>
+</div>

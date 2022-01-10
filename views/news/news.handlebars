@@ -3,12 +3,15 @@
             alt="">
         <nav class="navbar">
             <ul class="list">
-                <li class="list__item"><a href="" class="list__link">Sobre</a></li>
-                <li class="list__item"><a href="" class="list__link">Projetos</a></li>
+                <li class="list__item"><a href="#" class="list__link">Sobre</a></li>
+                <li class="list__item"><a href="#" class="list__link">Projetos</a></li>
                 {{#if user}}
-                    <li class="list__item"><a href="" class="list__link">Usuarios</a></li>
+                    <li class="list__item"><a href="#" class="list__link">Usuarios</a></li>
                 {{/if}}
-                <li class="list__item"><a href="" class="list__link">Cursos</a></li>
+                 {{#if user}}
+                    <li class="list__item"><a href="/noticias/newsMaterias" class="list__link">Materias</a></li>
+                {{/if}}
+                <li class="list__item"><a href="#" class="list__link">Cursos</a></li>
                
             </ul>
              <a href="/logout" class="btn-login">SAIR</a>
@@ -31,3 +34,5 @@
             </div>
         </nav>
     </header>
+
+    <h1>Teste</h1>

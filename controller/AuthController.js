@@ -37,7 +37,7 @@ module.exports = class AuthController{
           }
 
           req.session.userid = user.id
-         console.log(req.session)
+       //  console.log(req.session)
 
           req.flash('message','Login realizado com sucesso')
           req.session.save(()=>{
