@@ -16,5 +16,23 @@ module.exports = class UserController{
      
      )
     }
+
+    static UserHome(req,res){
+
+        const id = req.session.userid
+       // console.log(id)
+
+        User.findAll()
+        .then((user) => {
+          
+             const usuarios = user.map((result) => result.get({ plain: true }))
+             res.render('users/home',{
+                   layout: 'main_auth',
+                   usuarios,
+               })
+        })
+        
+      
+    }
     
 }

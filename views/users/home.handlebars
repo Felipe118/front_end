@@ -5,12 +5,8 @@
             <ul class="list">
                 <li class="list__item"><a href="/noticias/news" class="list__link">Home</a></li>
                 <li class="list__item"><a href="#" class="list__link">Projetos</a></li>
-                {{#if user}}
-                    <li class="list__item"><a href="/users" class="list__link">Usuarios</a></li>
-                {{/if}}
-                 {{#if user}}
-                    <li class="list__item"><a href="/noticias/newsMaterias" class="list__link">Materias</a></li>
-                {{/if}}
+                <li class="list__item"><a href="/users" class="list__link">Usuarios</a></li>
+                <li class="list__item"><a href="/noticias/newsMaterias" class="list__link">Materias</a></li>
                 <li class="list__item"><a href="#" class="list__link">Cursos</a></li>
                
             </ul>
@@ -34,5 +30,17 @@
             </div>
         </nav>
     </header>
-
-    <h1>Teste</h1>
+<h1 class="title-users"> Usuários do sistema </h1>
+<section class="container-users">
+    
+    {{#each usuarios}}
+    <div class="users">
+        <p class="user-name">{{this.name}}</p> 
+        <div class="botoes">
+            <a href="/users/edit" class="btn-edit">Editar</a>
+            <input type="submit" class="btn-delete" value="Excluir">
+        </div>
+        
+    </div>
+  {{/each}}
+</section>
