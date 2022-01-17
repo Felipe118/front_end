@@ -8,6 +8,10 @@ const News = db.define("news", {
         type: DataTypes.TEXT,
         allowNull:false
     },
+    abstract:{
+            type:DataTypes.TEXT,
+            allowNull:false
+    },
     news: {
         type: DataTypes.TEXT,
         allowNull:false

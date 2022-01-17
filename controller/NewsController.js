@@ -5,17 +5,26 @@ module.exports = class NewsController{
     static news(req,res){
         const id = req.session.userid
         //console.log(id)
-
+    
         User.findOne({where:{id:id}, raw:true})
         .then((user) => {
-             
-             if(user.permission === 'admin'){
-                res.render("news/news", { layout: 'main_auth',user})
-             }else{
-                res.render("news/news", { layout: 'main_auth'})
-             }
+            News.findAll()
+            .then((news) => {
+                
+                const noticias = news.map((result) => result.get({ plain: true }))
+                console.log(noticias)
+                if(user.permission === 'admin'){
+                    res.render("news/news", { layout: 'main_auth',user,noticias})
+                 }else{
+                    res.render("news/news", { layout: 'main_auth',noticias})
+                 }
+            })
+            //  if(user.permission === 'admin'){
+            //     res.render("news/news", { layout: 'main_auth',user})
+            //  }else{
+            //     res.render("news/news", { layout: 'main_auth'})
+            //  }
         })
-        
     }
 
     static newsMaterias(req,res){
@@ -25,6 +34,7 @@ module.exports = class NewsController{
 
         const materia = {
             title: req.body.title,
+            abstract: req.body.abstract,
             news: req.body.news,
             language: req.body.language,
             userId: req.session.userid

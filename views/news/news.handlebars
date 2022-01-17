@@ -35,4 +35,8 @@
         </nav>
     </header>
 
-    <h1>Teste</h1>
+    <h1>Notícias Sobre Linguagens de programação</h1>
+
+    {{#each noticias}}
+        <h1>{{this.language}}</h1>
+    {{/each}}
